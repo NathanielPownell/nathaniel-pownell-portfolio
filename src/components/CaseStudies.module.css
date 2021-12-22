@@ -12,7 +12,8 @@
   }
 
   .upper h2{
-    margin: 0;
+    margin: 5px;
+    margin-bottom: 10px;
     padding: 0;
     font-size: 1.7em;
     font-family: 'Coolvetica', Helvetica, sans-serif;

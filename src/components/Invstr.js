@@ -46,7 +46,7 @@ const Invstr = () => {
                 The goal was to create a web app that supports a user system and includes an entired dedicated database for the users' data.
             </p>
             <div className={classes.actionDiv} >
-                <p>Read more on <a target="_blank" href="https://github.com/NathanielPownell/alienswap/blob/main/README.md">Github <FontAwesomeIcon icon={faGithub} /></a></p>
+                <p>Read more on <a target="_blank" href="https://github.com/NathanielPownell/">Github <FontAwesomeIcon icon={faGithub} /></a></p>
                 <p className={classes.run}> <a target="_blank" href="https://invstrapp.herokuapp.com/"> Run App &nbsp; <FontAwesomeIcon icon={faPlay} /></a></p>
             </div>
 

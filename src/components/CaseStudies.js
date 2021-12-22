@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons'
-import AlienImg from './alienfront.JPG'
-import InvstrImg from './invstrmain.JPG'
+import AlienImg from './alienfront.jpg'
+import InvstrImg from './invstrmain.jpg'
 import { Link } from 'react-router-dom'
-import EstateioImg from './estatesfront.JPG'
+import EstateioImg from './estatesfront.jpg'
 
 import Card from './ui/Card';
 
