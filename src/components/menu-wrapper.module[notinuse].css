@@ -1,0 +1,131 @@
+html, body, ul{
+    padding: 0;
+    margin: 0;
+    border-collapse: collapse;
+    box-sizing: border-box;
+}
+
+
+.mainframe {
+    display: none;
+    padding-left: 80px;
+}
+
+/* styles for the top of menu frame */
+.frametop {
+    height: 80px;
+    width: calc(100% - 80px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.frametop div {
+    display: flex;
+}
+.frametop ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+.frametop li {
+    padding-right: 2em;
+    font-size: .8em;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.togglerDiv {
+    display: flex;
+    align-items: center;
+}
+.togglerDiv small{
+    font-size: .8em;
+}
+
+/* styles for midframe (content and social icons bar) */
+
+.midframe {
+    display: flex;
+    flex-direction: row;
+}
+
+/* styles for content */
+.content {
+    border: 2px solid;
+    height: calc(100vh - 160px);
+    width: 100%;
+}
+
+/* styles for socicons bar */
+.sociconsul {
+    list-style-type: none;
+    width: 80px;
+}
+.sociconsul li {
+    margin: 5px;
+    font-size: .7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* styles for lower frame */
+.lowerframe {
+    height: 80px;
+    width: 100%;
+    font-family: 'consolas', 'Courier New', Courier, monospace;
+}
+.navmenu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    border-left: 2px solid;
+}
+.navmenu li{
+    box-sizing: border-box;
+    border-collapse: collapse;
+    height: 80px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1em;
+    
+    border: 2px solid;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+}
+
+.navmenu li > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100px;
+}
+
+
+.socicon {
+    font-size: 3.3em;
+}
+
+.active {
+    transition: all .3s ease-in-out;
+    background-color: rgba(112, 112, 112, 0.541)
+}
+
+@media only screen and (min-width: 600px) {
+    .desktop {
+        display: block;
+    }
+    .mainframe {
+        display: block;
+        padding-left: 80px;
+    }
+}
+
+

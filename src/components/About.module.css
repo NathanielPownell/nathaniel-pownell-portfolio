@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: local('MyFont'), url(./coolvetica\ rg.ttf) format('ttf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+.contactcontent {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.left h2{
+    font-family: 'Coolvetica';
+}
+
+.right p {
+    font-size: 1em;
+    width: 250px;
+}
+
+.right p.contact{
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.left img{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.skills ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    flex-wrap: wrap;
+    padding:20px;
+    list-style-type: none;
+}
+
+.skills ul li{
+    overflow: visible;
+    height: 50px;
+    min-width: 50px;
+}
+.skills ul li img{
+
+    margin: 4px;
+    height: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.479);
+    border-radius: 50px;
+    transition: all .3s ease-in-out;
+}
+
+.skills ul li img:hover{
+    transform: translateY(-15px);
+    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.616);
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Coolvetica';
+    src: local('MyFont'), url(./coolvetica\ rg.ttf) format('ttf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
+
+  .contentdiv {
+    display: Flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .upper h2{
+    margin: 0;
+    padding: 0;
+    font-size: 1.7em;
+    font-family: 'Coolvetica', Helvetica, sans-serif;
+    font-weight: normal;
+    text-align: left;
+}
+
+.projects {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  height: 100%;
+}
+.wideSection {
+  padding: 20px;
+}
+.wideCard {
+  cursor: pointer;
+  border-radius: 15px;
+  flex: 1;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+
+  padding: 15px;
+  text-align: left;
+}
+
+.wideCard a {
+  color: rgba(117, 117, 117, 0.938);
+}

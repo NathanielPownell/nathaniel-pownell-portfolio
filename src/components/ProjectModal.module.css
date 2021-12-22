@@ -1,0 +1,47 @@
+.projectModal {
+    position: absolute;
+    top:2.5vh;
+    left: 2.5vw;
+    height: 95vh;
+    width: 95vw;
+    background-color: rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0.527);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border-radius: 20px;
+    box-shadow: 0px 0px 200px black;
+}
+
+.projectModal::-webkit-scrollbar{
+    background: transparent;
+    width: 10px;
+}
+
+.projectModal::-webkit-scrollbar-thumb{
+    background: rgba(90, 90, 90, 0.712);
+    
+    width: 10px;
+    border-radius: 10px;
+}
+
+.projectModal::-webkit-scrollbar-track-piece{
+    background: rgba(90, 29, 29, 0);
+    border-radius: 10px;
+}
+
+.projectModal::-webkit-scrollbar-button{
+    
+    background: rgba(255, 255, 255, 0);
+}
+
+.modalX {
+ position: absolute;
+ right: 1.5vw;
+ top: 1.5vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+ cursor: pointer;
+ font-size: 2em;
+}

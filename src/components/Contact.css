@@ -1,0 +1,103 @@
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+    font-family: Coolvetica;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.contactmethods {
+    width: fit-content;
+    padding: 30px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.459);
+}
+
+.sociconsul {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sociconsul li {
+  padding: 5px;
+  width: fit-content;
+}
+
+.sociconsul li a{
+  color: #555;
+  width: fit-content;
+  font-size: 16px;
+  transform: all .3s ease-in-out;
+}
+.sociconsul li a:hover{
+  color: rgb(122, 122, 122);
+}
+
+.email {
+    margin: 5px;
+    padding-left: 3px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.062);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.emailp{
+    margin: 0;
+    padding: 0;
+    padding-right: 10px;
+}
+
+.email .fa {
+    padding: 3.5px 8px 3.5px 8px;
+    
+    transition: all .2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.205);
+}
+
+.email:hover .fa, .email .fa:hover {
+    background-color: rgba(129, 129, 129, 0.164);
+}
+
+/* tooltip styling */
+
+  
+  .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+ .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .email:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
