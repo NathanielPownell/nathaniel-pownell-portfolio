@@ -1,0 +1,137 @@
+2021-12-22T21:08:06.854Z [INFO]: Git SSH Key acquired
+2021-12-22T21:08:06.937Z [INFO]: # Cloning repository: git@github.com:NathanielPownell/nathaniel-pownell-portfolio.git
+2021-12-22T21:08:07.000Z [INFO]: Agent pid 133
+2021-12-22T21:08:07.032Z [INFO]: Identity added: /root/.ssh/git_rsa (/root/.ssh/git_rsa)
+2021-12-22T21:08:07.400Z [INFO]: Cloning into 'nathaniel-pownell-portfolio'...
+2021-12-22T21:08:07.738Z [INFO]: Warning: Permanently added the ECDSA host key for IP address '140.82.112.4' to the list of known hosts.
+2021-12-22T21:08:08.021Z [INFO]: # Switching to commit: ec2da49c37f319da2dab4175c47937d2370a8b47
+2021-12-22T21:08:08.044Z [INFO]: Agent pid 146
+2021-12-22T21:08:08.044Z [INFO]: Identity added: /root/.ssh/git_rsa (/root/.ssh/git_rsa)
+                                 Note: switching to 'ec2da49c37f319da2dab4175c47937d2370a8b47'.
+                                 You are in 'detached HEAD' state. You can look around, make experimental
+                                 changes and commit them, and you can discard any commits you make in this
+                                 state without impacting any branches by switching back to a branch.
+                                 If you want to create a new branch to retain commits you create, you may
+                                 do so (now or later) by using -c with the switch command. Example:
+                                 git switch -c <new-branch-name>
+                                 Or undo this operation with:
+                                 git switch -
+                                 Turn off this advice by setting config variable advice.detachedHead to false
+                                 HEAD is now at ec2da49 update readme, fix JPG/jpg issue
+2021-12-22T21:08:08.051Z [INFO]: Successfully cleaned up Git credentials
+2021-12-22T21:08:08.051Z [INFO]: # Checking for Git submodules at: /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/.gitmodules
+2021-12-22T21:08:08.072Z [INFO]: # Retrieving environment cache...
+2021-12-22T21:08:08.112Z [INFO]: # Retrieved environment cache
+2021-12-22T21:08:08.113Z [INFO]: ---- Setting Up SSM Secrets ----
+2021-12-22T21:08:08.113Z [INFO]: SSM params {"Path":"/amplify/d3rcl1v12tygtk/main/","WithDecryption":true}
+2021-12-22T21:08:08.152Z [WARNING]: !Failed to set up process.env.secrets
+2021-12-22T21:08:08.153Z [WARNING]: ! Unable to patch packages...
+2021-12-22T21:08:08.160Z [INFO]: # Retrieving cache...
+2021-12-22T21:08:11.339Z [INFO]: # Extracting cache...
+2021-12-22T21:08:15.091Z [INFO]: # Extraction completed
+2021-12-22T21:08:35.464Z [INFO]: ## Starting Backend Build
+                                 ## Checking for associated backend environment...
+                                 ## No backend environment association found, continuing...
+                                 ## Completed Backend Build
+                                 ## Starting Frontend Build
+                                 # Starting phase: preBuild
+                                 # Executing command: npm ci
+2021-12-22T21:08:37.565Z [WARNING]: npm
+2021-12-22T21:08:37.566Z [WARNING]: WARN prepare removing existing node_modules/ before installation
+2021-12-22T21:08:48.863Z [INFO]: > @fortawesome/fontawesome-common-types@0.2.36 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/@fortawesome/fontawesome-common-types
+                                 > node attribution.js
+2021-12-22T21:08:48.904Z [INFO]: Font Awesome Free 0.2.36 by @fontawesome - https://fontawesome.com
+                                 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+2021-12-22T21:08:48.909Z [INFO]: > @fortawesome/fontawesome-svg-core@1.2.36 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/@fortawesome/fontawesome-svg-core
+                                 > node attribution.js
+2021-12-22T21:08:48.947Z [INFO]: Font Awesome Free 1.2.36 by @fontawesome - https://fontawesome.com
+                                 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+2021-12-22T21:08:49.290Z [INFO]: > core-js@3.19.3 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/core-js
+                                 > node -e "try{require('./postinstall')}catch(e){}"
+2021-12-22T21:08:49.335Z [INFO]: [96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+                                 [96mThe project needs your help! Please consider supporting of core-js:[0m
+                                 [96m>[94m https://opencollective.com/core-js [0m
+                                 [96m>[94m https://patreon.com/zloirock [0m
+                                 [96m>[94m https://paypal.me/zloirock [0m
+                                 [96m>[94m bitcoin: bc1qlea7544qtsmj2rayg0lthvza9fau63ux0fstcz [0m
+                                 [96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+2021-12-22T21:08:49.548Z [INFO]: > core-js-pure@3.19.3 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/core-js-pure
+                                 > node -e "try{require('./postinstall')}catch(e){}"
+2021-12-22T21:08:49.804Z [INFO]: > @fortawesome/free-solid-svg-icons@5.15.4 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/@fortawesome/free-solid-svg-icons
+                                 > node attribution.js
+2021-12-22T21:08:49.840Z [INFO]: Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+                                 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+2021-12-22T21:08:49.845Z [INFO]: > @fortawesome/free-regular-svg-icons@5.15.4 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/@fortawesome/free-regular-svg-icons
+                                 > node attribution.js
+2021-12-22T21:08:49.882Z [INFO]: Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+                                 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+2021-12-22T21:08:49.886Z [INFO]: > @fortawesome/free-brands-svg-icons@5.15.4 postinstall /codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/@fortawesome/free-brands-svg-icons
+                                 > node attribution.js
+2021-12-22T21:08:49.923Z [INFO]: Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
+                                 License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+2021-12-22T21:08:49.928Z [INFO]: added 1441 packages in 12.381s
+2021-12-22T21:08:49.942Z [INFO]: # Completed phase: preBuild
+                                 # Starting phase: build
+                                 # Executing command: npm run build
+2021-12-22T21:08:50.114Z [INFO]: > nathaniel-portfolio@0.1.0 build /codebuild/output/src464637281/src/nathaniel-pownell-portfolio
+                                 > react-scripts build
+2021-12-22T21:08:51.264Z [INFO]: Creating an optimized production build...
+2021-12-22T21:08:54.333Z [INFO]: Failed to compile.
+2021-12-22T21:08:54.335Z [INFO]: Module not found: Error: Can't resolve './alienfront.jpg' in '/codebuild/output/src464637281/src/nathaniel-pownell-portfolio/src/components'
+2021-12-22T21:08:54.348Z [WARNING]: npm
+2021-12-22T21:08:54.348Z [WARNING]: ERR! code ELIFECYCLE
+                                    npm ERR! errno 1
+2021-12-22T21:08:54.350Z [WARNING]: npm
+2021-12-22T21:08:54.351Z [WARNING]: ERR! nathaniel-portfolio@0.1.0 build: `react-scripts build`
+                                    npm ERR! Exit status 1
+                                    npm ERR!
+                                    npm ERR! Failed at the nathaniel-portfolio@0.1.0 build script.
+                                    npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+2021-12-22T21:08:54.355Z [WARNING]: 
+2021-12-22T21:08:54.356Z [WARNING]: npm ERR! A complete log of this run can be found in:
+                                    npm ERR!     /root/.npm/_logs/2021-12-22T21_08_54_351Z-debug.log
+2021-12-22T21:08:54.356Z [HELP]: Outputting the npm debug log
+                                 0 info it worked if it ends with ok
+                                 1 verbose cli [
+                                 1 verbose cli   '/root/.nvm/versions/node/v12.21.0/bin/node',
+                                 1 verbose cli   '/root/.nvm/versions/node/v12.21.0/bin/npm',
+                                 1 verbose cli   'run',
+                                 1 verbose cli   'build'
+                                 1 verbose cli ]
+                                 2 info using npm@6.14.11
+                                 3 info using node@v12.21.0
+                                 4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+                                 5 info lifecycle nathaniel-portfolio@0.1.0~prebuild: nathaniel-portfolio@0.1.0
+                                 6 info lifecycle nathaniel-portfolio@0.1.0~build: nathaniel-portfolio@0.1.0
+                                 7 verbose lifecycle nathaniel-portfolio@0.1.0~build: unsafe-perm in lifecycle true
+                                 8 verbose lifecycle nathaniel-portfolio@0.1.0~build: PATH: /root/.nvm/versions/node/v12.21.0/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/codebuild/output/src464637281/src/nathaniel-pownell-portfolio/node_modules/.bin:/usr/local/rvm/gems/ruby-2.4.6/bin:/usr/local/rvm/gems/ruby-2.4.6@global/bin:/usr/local/rvm/rubies/ruby-2.4.6/bin:/usr/local/rvm/bin:/root/.yarn/bin:/root/.config/yarn/global/node_modules/.bin:/root/.nvm/versions/node/v12.21.0/bin:/root/.local/bin:/root/.local/bin:/usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/.dotnet/tools
+                                 9 verbose lifecycle nathaniel-portfolio@0.1.0~build: CWD: /codebuild/output/src464637281/src/nathaniel-pownell-portfolio
+                                 10 silly lifecycle nathaniel-portfolio@0.1.0~build: Args: [ '-c', 'react-scripts build' ]
+                                 11 silly lifecycle nathaniel-portfolio@0.1.0~build: Returned: code: 1  signal: null
+                                 12 info lifecycle nathaniel-portfolio@0.1.0~build: Failed to exec build script
+                                 13 verbose stack Error: nathaniel-portfolio@0.1.0 build: `react-scripts build`
+                                 13 verbose stack Exit status 1
+                                 13 verbose stack     at EventEmitter.<anonymous> (/root/.nvm/versions/node/v12.21.0/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+                                 13 verbose stack     at EventEmitter.emit (events.js:314:20)
+                                 13 verbose stack     at ChildProcess.<anonymous> (/root/.nvm/versions/node/v12.21.0/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+                                 13 verbose stack     at ChildProcess.emit (events.js:314:20)
+                                 13 verbose stack     at maybeClose (internal/child_process.js:1022:16)
+                                 13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:287:5)
+                                 14 verbose pkgid nathaniel-portfolio@0.1.0
+                                 15 verbose cwd /codebuild/output/src464637281/src/nathaniel-pownell-portfolio
+                                 16 verbose Linux 4.14.252-195.483.amzn2.x86_64
+                                 17 verbose argv "/root/.nvm/versions/node/v12.21.0/bin/node" "/root/.nvm/versions/node/v12.21.0/bin/npm" "run" "build"
+                                 18 verbose node v12.21.0
+                                 19 verbose npm  v6.14.11
+                                 20 error code ELIFECYCLE
+                                 21 error errno 1
+                                 22 error nathaniel-portfolio@0.1.0 build: `react-scripts build`
+                                 22 error Exit status 1
+                                 23 error Failed at the nathaniel-portfolio@0.1.0 build script.
+                                 23 error This is probably not a problem with npm. There is likely additional logging output above.
+                                 24 verbose exit [ 1, true ]
+2021-12-22T21:08:54.359Z [ERROR]: !!! Build failed
+2021-12-22T21:08:54.359Z [ERROR]: !!! Non-Zero Exit Code detected
+2021-12-22T21:08:54.359Z [INFO]: # Starting environment caching...
+2021-12-22T21:08:54.359Z [INFO]: # Environment caching completed
+Terminating logging...

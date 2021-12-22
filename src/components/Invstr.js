@@ -8,7 +8,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import classes from './Alienswap.module.css'
 import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
-import InvstrLogo from './invstrlogo.png'
+import InvstrLogo from '../images/invstrlogo.png'
+
 import Badge from './ui/Badge'
 
 const Invstr = () => {

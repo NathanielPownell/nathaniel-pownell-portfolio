@@ -1,5 +1,5 @@
 import classes from './About.module.css';
-import nathanpic from './nathan.jpg';
+import nathanpic from '../images/nathan.jpg';
 
 import Badge from './ui/Badge';
 
