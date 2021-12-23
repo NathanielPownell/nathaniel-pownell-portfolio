@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+  font-family: "AssistantRegular";
+  src: local("AssistantRegular"),
+    url("./fonts/assistant.regular.ttf") format("truetype");
+  font-weight: normal;
+}
 
 body {
   margin: 0;
