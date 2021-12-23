@@ -1,4 +1,9 @@
-
+@font-face {
+    font-family: 'Coolvetica';
+    src: local('Coolvetica'), url(../fonts/coolvetica.ttf) format('ttf');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+  }
 
 .heading {
     font-family: Coolvetica;
