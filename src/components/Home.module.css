@@ -35,7 +35,7 @@
 
 .upper h3{
     padding-left: 15px;
-    font-family: consolas;
+    font-family: consolas, monospace;
     display: flex;
     
 }
