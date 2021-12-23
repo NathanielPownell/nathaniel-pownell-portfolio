@@ -48,7 +48,9 @@ html, body, ul{
 /* styles for content */
 .content {
     border: 2px solid;
-    height: calc(100vh - 160px);
+    height: 100vh;
+    background: transparent;
+
     width: 100%;
 }
 
@@ -134,6 +136,9 @@ a {
     .mainframe {
         display: block;
         padding-left: 80px;
+    }
+    .content{
+        height: calc(100vh - 160px);
     }
 }
 

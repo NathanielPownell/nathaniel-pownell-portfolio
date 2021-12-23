@@ -5,17 +5,24 @@ import Badge from './ui/Badge';
 
 const About = () => {
     return (
+        <>
         <div className={classes.contactcontent}>
             <div className={classes.left}>
                 <img src={nathanpic}></img>
             </div>
             <div className={classes.right}>
                 <h2>About Me</h2>
-                <p>I'm a junior front-end developer. I love web development because challenges my technical skills while allowing me to use my artistic abilities to create beautiful experiences.</p>
-                <a href="/contact" className={classes.contact}>
+                <p>I'm a junior front-end developer. 
+                     I chose to pursue web development about halfway through my software development career.
+                     <br/>
+                     I fell in love with the 
+                     visual nature of website creation. To me it feels more tangible, and I find it more interesting than
+                     the programming I was doing before.
+                     </p>                <a href="/contact" className={classes.contact}>
                     Let's Talk. 📧
                 </a>
             </div>
+        </div>
             <div className={classes.skills}>
                 <ul>
                     <li><Badge image="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" /></li>
@@ -37,7 +44,7 @@ const About = () => {
 
                 </ul>
             </div>
-        </div>
+            </>
     );
 };
 

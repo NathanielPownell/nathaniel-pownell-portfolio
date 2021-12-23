@@ -9,6 +9,10 @@
     display: Flex;
     flex-direction: column;
     width: 100%;
+
+  }
+  .upper {
+    height: 80px;
   }
 
   .upper h2{
@@ -26,7 +30,9 @@
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
-  height: 100%;
+  height: fit-content;
+  overflow-y: scroll;
+  background: transparent;
 }
 .wideSection {
   padding: 20px;
@@ -43,4 +49,10 @@
 
 .wideCard a {
   color: rgba(117, 117, 117, 0.938);
+}
+
+@media only screen and (min-width: 600px) {
+  .projects {
+    overflow-y: hidden;
+  }
 }

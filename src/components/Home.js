@@ -22,6 +22,13 @@ const Home = () => {
                     </h3>
                 </div>
             </div>
+            <div className={classes.mobile}>
+                 {/* Mobile only section  */}
+                 <p><strong>I'm a junior front-end developer. <br /><br></br>
+                     I've just graduated with an associate's degree in software development. <br />
+                     Looking for a team with big goals.
+                     </strong></p>
+            </div>
             <div className={classes.lower}>
                 <div className={classes.skills}>
                     <ul>

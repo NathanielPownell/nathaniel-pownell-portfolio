@@ -24,7 +24,7 @@ const CaseStudies = () => {
         <div className={classes.contentdiv}>
 
             <div className={classes.upper} >
-                <h2>Case Studies </h2>
+                <h2>Projects </h2>
             </div>
             <div className={classes.projects}>
                 
