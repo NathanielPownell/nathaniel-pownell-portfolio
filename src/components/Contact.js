@@ -2,13 +2,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopy, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faCodepen, faDribbble } from '@fortawesome/free-brands-svg-icons'
 import './Contact.css';
+import { useSpring, animated } from 'react-spring'
+
 
 import ReactTooltip from 'react-tooltip';
 
 // import classes from './Contact.module.css';
 
 const Contact = () => {
-
+    const styles = useSpring({
+        loop: false,
+        from: { opacity: 0},
+        to: { opacity: 1},
+        config: {duration: 300},
+      })
 
     let datatip = "Copied! ✅"
 
@@ -16,7 +23,7 @@ const Contact = () => {
         navigator.clipboard.writeText("nathanieldpownell@gmail.com");
     }
     return (
-        <div className='content'>
+        <animated.div style={styles} className='content'>
             <h3 className="heading">
                 Let's get in touch.
             </h3>
@@ -54,7 +61,7 @@ const Contact = () => {
 
                 </div>
             </div>
-        </div>
+        </animated.div>
 
     );
 };

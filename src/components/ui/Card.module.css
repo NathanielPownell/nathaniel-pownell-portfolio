@@ -3,18 +3,23 @@
     display: block;
     height: calc(100vh - 100px);
 } */
-
+.cardMain{
+    width: 300px;
+    height: 380px;
+    display: flex;
+    overflow: visible;
+}
 .card {
     cursor: pointer;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.473);
     margin: 20px;
-    width: 300px;
-    height: 380px;
-    overflow: hidden;
+
+    /* overflow: hidden; */
     margin: 0;
     border-radius: 15px;
     margin-top: 10px;
-    transition: all .3s ease-in-out;
+    /* transition: all .3s ease-in-out; */
+    will-change: transform;
 }
 
 .projImg{

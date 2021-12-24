@@ -24,7 +24,7 @@ const Alienswap = () => {
                 <li><Badge image="https://pbs.twimg.com/profile_images/1114309924551417856/FKA4cm2x_400x400.png" /></li>
             </ul>
             <p className={classes.paragraph}>
-                This project was created with Reactjs and thirdweb. It is a fairly simple web app, the main purpose is experimintation with Web3.0.
+                This project was created with Reactjs and thirdweb. It is a fairly simple web app; the main purpose is experimintation with Web3.0.
             </p>
 
 
@@ -37,7 +37,7 @@ const Alienswap = () => {
             </p>
             <h5>The Objective:</h5>
             <p className={classes.paragraph} >
-                The goal was to create a web app that used Web3 technologies, and pulls dynamica data from an external source.
+                The goal was to create a web app that used Web3 technologies, and pulls dynamic data from an external source.
             </p>
             <div className={classes.actionDiv} >
                 <p>Read more on <a target="_blank" href="https://github.com/NathanielPownell/alienswap/blob/main/README.md">Github <FontAwesomeIcon icon={ faGithub } /></a></p>

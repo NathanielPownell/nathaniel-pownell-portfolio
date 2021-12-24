@@ -44,7 +44,7 @@ const Invstr = () => {
             </p>
             <h5>The Objective:</h5>
             <p className={classes.paragraph} >
-                The goal was to create a web app that supports a user system and includes an entired dedicated database for the users' data.
+                The goal was to create a web app that supports a user system and includes a dedicated database for the users' data.
             </p>
             <div className={classes.actionDiv} >
                 <p>Read more on <a target="_blank" href="https://github.com/NathanielPownell/">Github <FontAwesomeIcon icon={faGithub} /></a></p>

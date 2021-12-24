@@ -1,11 +1,18 @@
 import classes from './About.module.css';
 import nathanpic from '../images/nathan.jpg';
+import { useSpring, animated } from 'react-spring'
 
 import Badge from './ui/Badge';
 
 const About = () => {
+    const styles = useSpring({
+        loop: false,
+        from: { opacity: 0},
+        to: { opacity: 1},
+        config: {duration: 300},
+      })
     return (
-        <>
+        <animated.div style={styles}>
         <div className={classes.contactcontent}>
             <div className={classes.left}>
                 <img src={nathanpic}></img>
@@ -44,7 +51,7 @@ const About = () => {
 
                 </ul>
             </div>
-            </>
+            </animated.div>
     );
 };
 

@@ -2,17 +2,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
+import { useSpring, animated } from 'react-spring'
 
 import classes from './Home.module.css'
 
 
 const Home = () => {
+    const styles = useSpring({
+        loop: false,
+        from: { opacity: 0},
+        to: { opacity: 1},
+        config: {duration: 300},
+      })
 
     return (
-        <div className={classes.contentdiv}>
+        <animated.div style={styles} className={classes.contentdiv}>
 
             <div className={classes.upper} >
-                    <h1>Nathaniel <br className={classes.mobile} /> Pownell</h1>
+                    <animated.h1 style={styles}>Nathaniel <br className={classes.mobile} /> Pownell</animated.h1>
                 <div>
                     <h3>Junior Front End Developer</h3>
                     <ul className={classes.skillsmobile}>
@@ -54,7 +61,7 @@ const Home = () => {
                     <a href="/about" >Learn More</a>
                 </div>
             </div>
-        </div>
+        </animated.div>
     );
 };
 

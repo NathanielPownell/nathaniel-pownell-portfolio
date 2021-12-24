@@ -6,6 +6,8 @@ import { GlobalStyles } from "./globalStyles";
 import { lightTheme, darkTheme } from "./Themes"
 import Toggle from "./Toggler";
 
+import { useSpring, animated } from 'react-spring'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleNotch, faHome, faMoon } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin, faCodepen, faDribbble } from '@fortawesome/free-brands-svg-icons'
@@ -18,6 +20,13 @@ import { NavLink } from "react-router-dom";
 
 const MenuFrame = (props) => {
     const [theme, themeToggler, mountedComponent] = useDarkMode();
+
+    const styles = useSpring({
+        loop: false,
+        from: { opacity: 0},
+        to: { opacity: 1},
+        config: {duration: 300},
+      })
 
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -42,9 +51,9 @@ const MenuFrame = (props) => {
                 </div>
                 <div className='midframe'>
 
-                    <div className='content' id="content" >
+                    <animated.div style={styles} className='content' id="content" >
                         {props.children}
-                    </div>
+                    </animated.div>
 
                     <ul className="sociconsulFrame">
                     <li>

@@ -5,6 +5,7 @@ import AlienImg from '../images/alienfront.jpg'
 import InvstrImg from '../images/invstrmain.jpg'
 import { Link } from 'react-router-dom'
 import EstateioImg from '../images/estatesfront.jpg'
+import { useSpring, animated } from 'react-spring'
 
 import Card from './ui/Card';
 
@@ -14,6 +15,12 @@ import Alienswap from './Alienswap';
 import Invstr from './Invstr'
 
 const CaseStudies = () => {
+    const styles = useSpring({
+        loop: false,
+        from: { opacity: 0},
+        to: { opacity: 1},
+        config: {duration: 300},
+      })
     const [project, projectHandler] = useState('');
 
     const toggleModalOff = () => {
@@ -21,7 +28,7 @@ const CaseStudies = () => {
     }
 
     return (
-        <div className={classes.contentdiv}>
+        <animated.div style={styles} className={classes.contentdiv}>
 
             <div className={classes.upper} >
                 <h2>Projects </h2>
@@ -44,7 +51,7 @@ const CaseStudies = () => {
                     </a>
                 </div>
             </div>
-        </div>
+        </animated.div>
     );
 };
 
