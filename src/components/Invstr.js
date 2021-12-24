@@ -15,7 +15,7 @@ import Badge from './ui/Badge'
 const Invstr = () => {
     return (
         <ProjectModal>
-            <img src={InvstrLogo} />
+            <img className={classes.bannerImg} src={InvstrLogo} />
             <h1>Invstr Stock Watchlist Web-App</h1>
             <ul className={classes.techs} >
 

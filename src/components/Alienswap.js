@@ -12,7 +12,7 @@ import Badge from './ui/Badge'
 const Alienswap = () => {
     return (
         <ProjectModal>
-            <img src="https://main.d1ygngt526fn5m.amplifyapp.com/static/media/alienswap.54619cd9f86834b66779.png" />
+            <img className={classes.bannerImg} src="https://main.d1ygngt526fn5m.amplifyapp.com/static/media/alienswap.54619cd9f86834b66779.png" />
             <h1>ALIENSWAP WEB 3.0 NFT MARKETPLACE</h1>
             <ul className={classes.techs}>
                 <li><Badge image="https://iconape.com/wp-content/files/zk/93042/svg/react.svg" /></li>

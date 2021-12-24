@@ -12,23 +12,30 @@ const Home = () => {
         <div className={classes.contentdiv}>
 
             <div className={classes.upper} >
-                    <h1>Nathaniel Pownell</h1>
+                    <h1>Nathaniel <br className={classes.mobile} /> Pownell</h1>
                 <div>
-                    <h3>ReactJs Web Developer</h3>
+                    <h3>Junior Front End Developer</h3>
+                    <ul className={classes.skillsmobile}>
+                        <li>ReactJs</li>
+                        <li>HTML/CSS</li>
+                        <li>PHP</li>
+                        <li>JQuery</li>
+                        <li>...</li>
+                    </ul>
+                </div>
                     <h3>
                         <Link to="/projects" >
                             See my work
                         </Link>
                     </h3>
                 </div>
-            </div>
-            <div className={classes.mobile}>
-                 {/* Mobile only section  */}
+
+            {/* <div className={classes.mobile}>
                  <p><strong>I'm a junior front-end developer. <br /><br></br>
                      I've just graduated with an associate's degree in software development. <br />
                      Looking for a team with big goals.
                      </strong></p>
-            </div>
+            </div> */}
             <div className={classes.lower}>
                 <div className={classes.skills}>
                     <ul>
