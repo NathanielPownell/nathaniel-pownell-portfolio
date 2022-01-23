@@ -61,6 +61,29 @@ html, body, ul{
     scroll-behavior: smooth;
 }
 
+/* width */
+.content::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .content::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+    background: linear-gradient(-19deg, rgba(0,87,224,1) 0%, rgb(2, 200, 250) 100%);
+
+  }
+  
+  /* Handle on hover */
+  .content::-webkit-scrollbar-thumb:hover {
+    opacity: .7;
+  }
+
+
 /* styles for socicons bar */
 .sociconsulFrame {
     display: none;
