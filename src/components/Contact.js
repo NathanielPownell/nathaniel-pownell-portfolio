@@ -23,7 +23,7 @@ const Contact = () => {
         navigator.clipboard.writeText("nathanieldpownell@gmail.com");
     }
     return (
-        <animated.div style={styles} className='content'>
+        <animated.div id="contact" style={styles} className='contentContact'>
             <h3 className="heading">
                 Let's get in touch.
             </h3>

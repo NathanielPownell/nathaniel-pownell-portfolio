@@ -77,33 +77,34 @@ const MenuFrame = (props) => {
                         </a>
                     </li>
                     </ul>
+                    
                 </div>
+                
                 <div className='lowerframe'>
                     <ul className='navmenu'>
                         
                         <li>
-                            <NavLink  to="/" activeClassName="active" style={{color: themeMode.text}}>
+                            <a  href="#home" activeClassName="active" style={{color: themeMode.text}}>
                                 <FontAwesomeIcon icon={faHome} />
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink  to="/projects" activeClassName="active" style={{color: themeMode.text}}>
+                            <a  href="#projects" activeClassName="active" style={{color: themeMode.text}}>
                                 Projects
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink  to="/about" activeClassName="active" style={{color: themeMode.text}}>
+                            <a  href="#about" activeClassName="active" style={{color: themeMode.text}}>
                                 About
-                            </NavLink>
+                            </a>
                         </li>
                         <li>
-                            <NavLink  to="/contact" activeClassName="active" style={{color: themeMode.text}}>
+                            <a  href="#contact" activeClassName="active" style={{color: themeMode.text}}>
                                 Contact
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                 </div>
-
             </div>
         </ThemeProvider>
     );

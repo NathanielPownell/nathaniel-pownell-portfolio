@@ -12,9 +12,8 @@
 .card {
     cursor: pointer;
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.473);
-    margin: 20px;
-
-    /* overflow: hidden; */
+    width: 300px;
+    overflow: hidden;
     margin: 0;
     border-radius: 15px;
     margin-top: 10px;
@@ -23,8 +22,9 @@
 }
 
 .projImg{
-    height: 60%;
     transition: all .3s ease-in-out;
+    width: 300px;
+    border-radius: 15px 15px 0 0;
 }
 .info {
     
@@ -35,6 +35,16 @@
 }
 .card:hover .info {
     transform: translateY(-80px);
+}
+
+.technologiesul{
+    list-style-type: none;
+}
+
+.actionContainer{
+    transform: translateY(80px);
+    display: flex;
+    justify-content: center;
 }
 
 .card .view {

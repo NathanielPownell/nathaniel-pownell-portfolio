@@ -8,7 +8,7 @@ const ProjectModal = (props) => {
     return (
         <div className={classes.projectModal}>
             <div className={classes.modalX} >
-                <a href="/projects">
+                <a href="/#projects">
                 <FontAwesomeIcon icon={faTimesCircle} />
                 </a>
             </div>

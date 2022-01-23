@@ -8,7 +8,8 @@
 .contentdiv {
     
     /* height: calc(100vh - 100px); */
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,7 +31,7 @@
     margin: 0;
     padding: 0;
     margin-left: 15px;
-    font-size: 3em;
+    font-size: 5em;
     height: fit-content;
     width: calc(100vw - 30px);
     font-family: 'Coolvetica', Helvetica, sans-serif;

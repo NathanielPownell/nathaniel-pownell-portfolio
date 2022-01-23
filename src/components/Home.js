@@ -5,21 +5,21 @@ import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring'
 
 import classes from './Home.module.css'
-
+import Button from './ui/Button'
 
 const Home = () => {
     const styles = useSpring({
         loop: false,
-        from: { opacity: 0},
-        to: { opacity: 1},
-        config: {duration: 300},
-      })
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        config: { duration: 300 },
+    })
 
     return (
         <animated.div style={styles} className={classes.contentdiv}>
 
-            <div className={classes.upper} >
-                    <animated.h1 style={styles}>Nathaniel <br className={classes.mobile} /> Pownell</animated.h1>
+            <div id="home" className={classes.upper} >
+                <animated.h1 style={styles}>Nathaniel <br className={classes.mobile} /> Pownell</animated.h1>
                 <div>
                     <h3>Junior Front End Developer</h3>
                     <ul className={classes.skillsmobile}>
@@ -30,12 +30,13 @@ const Home = () => {
                         <li>...</li>
                     </ul>
                 </div>
-                    <h3>
-                        <Link to="/projects" >
-                            See my work
-                        </Link>
-                    </h3>
-                </div>
+                <a href="#projects">
+                    <Button variety="regular" >
+                        See my work
+                    </Button>
+                </a>
+
+            </div>
 
             {/* <div className={classes.mobile}>
                  <p><strong>I'm a junior front-end developer. <br /><br></br>

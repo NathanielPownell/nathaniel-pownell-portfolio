@@ -1,0 +1,80 @@
+.button {
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px 15px;
+    margin: 15px;
+    font-size: 1.2em;
+    font-weight: 600;
+    /* color: rgb(255, 255, 255); */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.363);
+    border: none;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    white-space: nowrap;
+}
+
+
+.regular {
+    color: white;
+    background: rgb(238,165,121);
+    background: linear-gradient(-19deg, rgba(0,87,224,1) 0%, rgba(2,250,239,1) 100%);
+  
+}
+
+.secondary {
+    background: white;
+    color: black;
+}
+
+/* .regular:hover {
+    transform: translateY(-5px);
+} */
+
+.danger {
+    background: rgb(184, 17, 17);
+}
+
+.danger:hover {
+    background: maroon;
+}
+
+.outlined {
+    font-size: 1.2em;
+    /* color: #000; */
+    background: none;
+    outline: 2px solid;
+    opacity: .7;
+}
+
+.outlined:hover {
+    opacity: 1;
+}
+
+.small {
+    font-size: 1em;
+    padding: 5px 8px;
+    font-weight: normal;
+    transition: all .1s ease-in-out;
+}
+
+.small:hover{
+    transform: translateY(-2px);
+}
+
+.big {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+.round {
+    border-radius: 70px;
+}
+
+
+.white {
+    color: white;
+}

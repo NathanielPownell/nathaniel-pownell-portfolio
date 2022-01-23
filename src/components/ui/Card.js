@@ -3,11 +3,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { useRef, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
 
-
+import Button from './Button'
 import classes from './Card.module.css'
 
 
-const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1.1]
+const calc = (x, y) => [-(y - window.innerHeight / 9) / 50, (x - window.innerWidth / 2) / 30, 1.05]
 
 const trans = (x, y, s) => `perspective(800px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
 
@@ -37,14 +37,20 @@ const Card = (props) => {
                         {props.desc}
                     </p>
 
-                    <ul>
+                    <ul className={classes.technologiesul}>
                         {technologies}
                     </ul>
 
-
-                    <a href={props.toPath} className={classes.view}>
-                        View &nbsp; <FontAwesomeIcon icon={faArrowRight} />
-                    </a>
+                    {props.displayButtons && 
+                    <div className={classes.actionContainer}>
+                        <Button variety="secondary round" href={props.toInfoPath} className={classes.view}>
+                            View Info
+                        </Button>
+                        <Button variety="regular round" href={props.toExternalPath} className={classes.view}>
+                            Run &nbsp; <FontAwesomeIcon icon={faArrowRight} />
+                        </Button>
+                    </div>
+                    }
 
                 </div>
             </animated.div>

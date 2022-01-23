@@ -6,9 +6,10 @@
   }
 
 .contactcontent {
+    height: fit-content;
     padding: 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -35,6 +36,12 @@
 .left img{
     width: 250px;
     border-radius: 50%;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .skills ul {
@@ -64,4 +71,10 @@
 .skills ul li img:hover{
     transform: translateY(-15px);
     box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.616);
+}
+
+@media only screen and (min-width: 600px) {
+    .contactcontent {
+        flex-direction: row;
+    }
 }

@@ -1,8 +1,11 @@
 
-.content {
+.contentContact {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  height: fit-content;
 }
 
 .heading {

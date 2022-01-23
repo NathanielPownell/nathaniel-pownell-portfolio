@@ -12,6 +12,7 @@ import Alienswap from "./components/Alienswap";
 import StudyPortfolio from "./components/StudyPortfolio";
 import Invstr from "./components/Invstr";
 import Estatesio from "./components/estatesio";
+import Main from "./components/Main";
 
 
 
@@ -24,10 +25,8 @@ function App() {
       <Router>
           <MenuFrame>
             <Routes>
-              <Route exact path='/' element={< Home />}></Route>
-              <Route exact path='/projects' element={< CaseStudies />}></Route>
-              <Route exact path='/about' element={< About />}></Route>
-              <Route exact path='/contact' element={< Contact />}></Route>
+              
+              <Route exact path='/' element={< Main />}></Route>
               <Route exact path='/projects/alienswap' element={< Alienswap />}></Route>
               <Route exact path='/projects/portfolio' element={< StudyPortfolio />}></Route>
               <Route exact path='/projects/invstr' element={< Invstr />}></Route>

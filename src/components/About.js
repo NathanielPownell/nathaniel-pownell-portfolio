@@ -12,7 +12,8 @@ const About = () => {
         config: {duration: 300},
       })
     return (
-        <animated.div style={styles}>
+        <animated.div id="about" style={styles}>
+            
         <div className={classes.contactcontent}>
             <div className={classes.left}>
                 <img src={nathanpic}></img>
