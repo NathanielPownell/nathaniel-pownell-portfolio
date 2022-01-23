@@ -1,36 +1,42 @@
 import classes from './About.module.css';
 import nathanpic from '../images/nathan.jpg';
 import { useSpring, animated } from 'react-spring'
-
+import Button from './ui/Button';
 import Badge from './ui/Badge';
 
 const About = () => {
     const styles = useSpring({
         loop: false,
-        from: { opacity: 0},
-        to: { opacity: 1},
-        config: {duration: 300},
-      })
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        config: { duration: 300 },
+    })
     return (
         <animated.div id="about" style={styles}>
-            
-        <div className={classes.contactcontent}>
-            <div className={classes.left}>
-                <img src={nathanpic}></img>
+
+            <div className={classes.contactcontent}>
+                <div className={classes.left}>
+                    <img src={nathanpic}></img>
+                </div>
+                <div className={classes.right}>
+                    <h2>About Me</h2>
+                    <p>I'm a junior full-stack developer.
+                    </p>
+                    <p>
+                        I fell in love with the
+                        visual yet technical nature of website development. As a full stack developer, I get to dive deep into the technical backend
+                        while fulfilling my creative appetite through design and development of the front-facing UI.
+                    </p>
+                    <p>
+                        Along with development, my hobbies include 2D and 3D graphic design and icon illustration.
+                    </p>
+                    <div className={classes.actionsContact}>
+                        <a href="#contact" >
+                            <Button variety="regular round">Let's Talk. 📧</Button>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div className={classes.right}>
-                <h2>About Me</h2>
-                <p>I'm a junior front-end developer. 
-                     I chose to pursue web development about halfway through my software development career.
-                     <br/>
-                     I fell in love with the 
-                     visual nature of website creation. To me it feels more tangible, and I find it more interesting than
-                     the programming I was doing before.
-                     </p>                <a href="/contact" className={classes.contact}>
-                    Let's Talk. 📧
-                </a>
-            </div>
-        </div>
             <div className={classes.skills}>
                 <ul>
                     <li><Badge image="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" /></li>
@@ -52,7 +58,7 @@ const About = () => {
 
                 </ul>
             </div>
-            </animated.div>
+        </animated.div>
     );
 };
 

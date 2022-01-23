@@ -3,7 +3,7 @@ import { faCircleNotch, faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components';
 import { useSpring, animated } from 'react-spring'
-
+import NathanSvg from './Nathan.svg'
 import classes from './Home.module.css'
 import Button from './ui/Button'
 
@@ -19,13 +19,19 @@ const Home = () => {
         <animated.div style={styles} className={classes.contentdiv}>
 
             <div id="home" className={classes.upper} >
+                <div className={classes.headline}>
+
                 <animated.h1 style={styles}>Nathaniel <br className={classes.mobile} /> Pownell</animated.h1>
-                <div>
-                    <h3>Junior Front End Developer</h3>
+                <div className={classes.svgContainer}>
+                <img className={classes.nathanSvg} src={NathanSvg} />
+                </div>
+                </div>
+                <div className={classes.info}>
+                    <h3>Junior Full-Stack Developer</h3>
                     <ul className={classes.skillsmobile}>
                         <li>ReactJs</li>
+                        <li>Python/Django</li>
                         <li>HTML/CSS</li>
-                        <li>PHP</li>
                         <li>JQuery</li>
                         <li>...</li>
                     </ul>
@@ -35,7 +41,6 @@ const Home = () => {
                         See my work
                     </Button>
                 </a>
-
             </div>
 
             {/* <div className={classes.mobile}>
@@ -47,19 +52,19 @@ const Home = () => {
             <div className={classes.lower}>
                 <div className={classes.skills}>
                     <ul>
-                        <li>ReactJs</li>
+                    <li>ReactJs</li>
+                        <li>Python/Django</li>
                         <li>HTML/CSS</li>
-                        <li>PHP</li>
                         <li>JQuery</li>
                         <li>...</li>
                     </ul>
                 </div>
                 <div className={classes.brief}>
                     <p>
-                        Junior developer specializing in <b>mobile-first</b> and
-                        reactive web apps and websites.
+                        Junior developer specializing in <b>mobile-first</b> and 
+                        <b> reactive</b> web apps and websites.
                     </p>
-                    <a href="/about" >Learn More</a>
+                    <a href="#about" >Learn More</a>
                 </div>
             </div>
         </animated.div>
