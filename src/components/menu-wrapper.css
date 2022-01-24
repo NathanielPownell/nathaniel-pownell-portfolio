@@ -18,6 +18,9 @@ html, body, ul{
     right: 5px;
     background: linear-gradient(-19deg, rgba(0,87,224,1) 0%, rgba(2,250,239,1) 100%);
     box-shadow: 2px 2px 6px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .togglerDiv.mobile > * {
