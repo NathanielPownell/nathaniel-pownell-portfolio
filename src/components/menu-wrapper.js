@@ -49,10 +49,10 @@ const MenuFrame = (props) => {
                             <li>nathanieldpownell@gmail.com</li>
                         </ul>
                     </div>
-                    <div className="togglerDiv">
+                    {/* <div className="togglerDiv">
                         <small>{themeMode.themetext}</small>
                         <Toggle theme={theme} toggleTheme={themeToggler} />
-                    </div>
+                    </div> */}
 
                 </div>
                 <div className='midframe'>
