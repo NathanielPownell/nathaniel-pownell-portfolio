@@ -23,10 +23,10 @@ const MenuFrame = (props) => {
 
     const styles = useSpring({
         loop: false,
-        from: { opacity: 0},
-        to: { opacity: 1},
-        config: {duration: 300},
-      })
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        config: { duration: 300 },
+    })
 
     const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
@@ -34,6 +34,12 @@ const MenuFrame = (props) => {
     return (
         <ThemeProvider theme={themeMode}>
             <GlobalStyles />
+
+            <div className="togglerDiv mobile">
+                {/* <small>{themeMode.themetext}</small> */}
+                <Toggle theme={theme} toggleTheme={themeToggler} />
+            </div>
+
             <div className='mainframe'>
                 <div className='frametop'>
                     <div>
@@ -56,50 +62,50 @@ const MenuFrame = (props) => {
                     </animated.div>
 
                     <ul className="sociconsulFrame">
-                    <li>
-                        <a className="socicon" style={{color: themeMode.text}} target="_blank" href="https://github.com/NathanielPownell">
-                            <FontAwesomeIcon className='socIcon' icon={faGithub} />
-                        </a>
-                    </li>
-                    <li>
-                        <a className="socicon" style={{color: themeMode.text}} target="_blank" href="https://www.linkedin.com/in/nathaniel-pownell-3a510a1bb/">
-                            <FontAwesomeIcon className='socIcon' icon={faLinkedin} />
-                        </a>
-                    </li>
-                    <li>
-                        <a className="socicon" style={{color: themeMode.text}} target="_blank" href="https://codepen.io/nathanielpownell">
-                            <FontAwesomeIcon icon={faCodepen} />
-                        </a>
-                    </li>
-                    <li>
-                        <a className="socicon" style={{color: themeMode.text}} target="_blank" href="https://dribbble.com/nathanielpownell">
-                            <FontAwesomeIcon icon={faDribbble} />
-                        </a>
-                    </li>
+                        <li>
+                            <a className="socicon" style={{ color: themeMode.text }} target="_blank" href="https://github.com/NathanielPownell">
+                                <FontAwesomeIcon className='socIcon' icon={faGithub} />
+                            </a>
+                        </li>
+                        <li>
+                            <a className="socicon" style={{ color: themeMode.text }} target="_blank" href="https://www.linkedin.com/in/nathaniel-pownell-3a510a1bb/">
+                                <FontAwesomeIcon className='socIcon' icon={faLinkedin} />
+                            </a>
+                        </li>
+                        <li>
+                            <a className="socicon" style={{ color: themeMode.text }} target="_blank" href="https://codepen.io/nathanielpownell">
+                                <FontAwesomeIcon icon={faCodepen} />
+                            </a>
+                        </li>
+                        <li>
+                            <a className="socicon" style={{ color: themeMode.text }} target="_blank" href="https://dribbble.com/nathanielpownell">
+                                <FontAwesomeIcon icon={faDribbble} />
+                            </a>
+                        </li>
                     </ul>
-                    
+
                 </div>
-                
+
                 <div className='lowerframe'>
                     <ul className='navmenu'>
-                        
+
                         <li>
-                            <a  href="#home" activeClassName="active" style={{color: themeMode.text}}>
+                            <a href="#home" activeClassName="active" style={{ color: themeMode.text }}>
                                 <FontAwesomeIcon icon={faHome} />
                             </a>
                         </li>
                         <li>
-                            <a  href="#projects" activeClassName="active" style={{color: themeMode.text}}>
+                            <a href="#projects" activeClassName="active" style={{ color: themeMode.text }}>
                                 Projects
                             </a>
                         </li>
                         <li>
-                            <a  href="#about" activeClassName="active" style={{color: themeMode.text}}>
+                            <a href="#about" activeClassName="active" style={{ color: themeMode.text }}>
                                 About
                             </a>
                         </li>
                         <li>
-                            <a  href="#contact" activeClassName="active" style={{color: themeMode.text}}>
+                            <a href="#contact" activeClassName="active" style={{ color: themeMode.text }}>
                                 Contact
                             </a>
                         </li>

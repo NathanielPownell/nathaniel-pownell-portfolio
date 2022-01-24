@@ -7,6 +7,23 @@ html, body, ul{
 }
 
 
+.togglerDiv.mobile{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    /* padding: 3px; */
+    border-radius: 100px;
+    z-index: 4;
+    margin: 5px;
+    right: 5px;
+    background: linear-gradient(-19deg, rgba(0,87,224,1) 0%, rgba(2,250,239,1) 100%);
+    box-shadow: 2px 2px 6px black;
+}
+
+.togglerDiv.mobile > * {
+    font-size: 30px;
+}
+
 /* styles for the top of menu frame */
 .frametop {
     height: 80px;
@@ -153,6 +170,9 @@ a {
 @media only screen and (min-width: 600px) {
     html, body {
         overflow: hidden;
+    }
+    .mobile{
+        display: none;
     }
     .desktop {
         visibility: visible;

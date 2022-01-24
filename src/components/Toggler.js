@@ -2,12 +2,12 @@ import React from 'react'
 import { func, string } from 'prop-types';
 import styled from "styled-components"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMoon } from '@fortawesome/free-solid-svg-icons'
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 const Button = styled.button`
   background: none;
   border: none;
-  color: ${({ theme }) => theme.text};
+  color: white;
   border-radius: 30px;
   cursor: pointer;
   font-size:0.8rem;
@@ -17,7 +17,12 @@ const Button = styled.button`
 const Toggle = ({theme,  toggleTheme }) => {
     return (
         <Button onClick={toggleTheme} >
+          {theme === 'light' && 
           <FontAwesomeIcon icon={faMoon} />
+    }
+    {theme === 'dark' &&
+      <FontAwesomeIcon icon={faSun} />
+    }
         </Button>
     );
 };

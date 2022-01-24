@@ -1,3 +1,5 @@
+import { faBorderNone } from "@fortawesome/free-solid-svg-icons"
+
 export const lightTheme = {
     body: '#fff',
     text: '#363537',
