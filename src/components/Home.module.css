@@ -6,7 +6,6 @@
   }
 
 .contentdiv {
-    
     /* height: calc(100vh - 100px); */
     min-height: 100vh;
     height: fit-content;
@@ -124,12 +123,17 @@
 
 
 @media only screen and (min-width: 700px) {
+    .contentdiv {
+        margin-top: 50px;
+
+    }
     .upper h1{
         /* font-size: 2em; */
         border: none;
+
     }
     .headline {
-        flex-direction: column-reverse;
+        
         /* align-items: flex-start; */
     }
     .lower {
@@ -150,6 +154,7 @@
     .headline {
         flex-direction: row;
         align-items: center;
+        
     }
     .nathanSvg {
         width: 350px;
