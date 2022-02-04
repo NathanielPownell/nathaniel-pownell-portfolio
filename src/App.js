@@ -13,6 +13,8 @@ import StudyPortfolio from "./components/StudyPortfolio";
 import Invstr from "./components/Invstr";
 import Estatesio from "./components/estatesio";
 import Main from "./components/Main";
+import Random from "./components/Random";
+import Survey from "./components/Survey";
 
 
 
@@ -31,6 +33,8 @@ function App() {
               <Route exact path='/projects/portfolio' element={< StudyPortfolio />}></Route>
               <Route exact path='/projects/invstr' element={< Invstr />}></Route>
               <Route exact path='/projects/estatesio' element={< Estatesio />}></Route>
+              <Route exact path='/projects/survhey' element={< Survey />}></Route>
+              <Route exact path='/projects/random' element={< Random />}></Route>
             </Routes>
           </MenuFrame>
       </Router>

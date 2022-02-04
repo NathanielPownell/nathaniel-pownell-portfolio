@@ -20,14 +20,15 @@
     /* transition: all .3s ease-in-out; */
     will-change: transform;
 }
-
+.runLink{
+    color: white;
+}
 .projImg{
     transition: all .3s ease-in-out;
     width: 300px;
     border-radius: 15px 15px 0 0;
 }
 .info {
-    
     transition: all .3s ease-in-out;
 }
 .card:hover .projImg {
@@ -37,12 +38,18 @@
     transform: translateY(-80px);
 }
 
+.card:hover .actionContainer{
+    opacity: 1;
+}
+
 .technologiesul{
     list-style-type: none;
 }
 
 .actionContainer{
-    transform: translateY(80px);
+    /* transform: translateY(80px); */
+    transition: all .3s ease-in-out;
+    opacity: 0;
     display: flex;
     justify-content: center;
 }

@@ -41,15 +41,17 @@ const Card = (props) => {
                         {technologies}
                     </ul>
 
-                    {props.displayButtons && 
-                    <div className={classes.actionContainer}>
-                        <Button variety="secondary round" href={props.toInfoPath} className={classes.view}>
-                            View Info
-                        </Button>
-                        <Button variety="regular round" href={props.toExternalPath} className={classes.view}>
-                            Run &nbsp; <FontAwesomeIcon icon={faArrowRight} />
-                        </Button>
-                    </div>
+                    {props.displayButtons &&
+                        <div className={classes.actionContainer}>
+                            <Button variety="secondary round" href={props.toInfoPath} className={classes.view}>
+                                View Info
+                            </Button>
+                            <Button variety="regular round" target="_blank" href={props.toExternalPath} className={classes.view}>
+                                <a className={classes.runLink} target="_blank" href={props.toExternalPath}>
+                                    Run &nbsp; <FontAwesomeIcon icon={faArrowRight} />
+                                </a>
+                            </Button>
+                        </div>
                     }
 
                 </div>
