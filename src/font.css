@@ -6,6 +6,6 @@
   }
 
   @font-face {
-      font-family: f;
+      font-family: 'Poppins';
       src: local('Poppins') url(./fonts/Poppins-Regular.ttf) format('tff');
   }
