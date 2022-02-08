@@ -17,6 +17,7 @@ import './menu-wrapper.css'
 import Loading from "./Loading";
 import CaseStudies from "./CaseStudies";
 import { NavLink } from "react-router-dom";
+import Button from "./ui/Button";
 
 const MenuFrame = (props) => {
     const [theme, themeToggler, mountedComponent] = useDarkMode();
@@ -107,6 +108,14 @@ const MenuFrame = (props) => {
                         <li>
                             <a href="#contact" activeClassName="active" style={{ color: themeMode.text }}>
                                 Contact
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog" activeClassName="active" style={{ color: themeMode.text }}>
+                                <Button variety="regular">
+
+                                Blog
+                                </Button>
                             </a>
                         </li>
                     </ul>

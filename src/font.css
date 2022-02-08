@@ -4,3 +4,8 @@
     /* other formats include: 'woff2', 'truetype, 'opentype',
                               'embedded-opentype', and 'svg' */
   }
+
+  @font-face {
+      font-family: f;
+      src: local('Poppins') url(./fonts/Poppins-Regular.ttf) format('tff');
+  }

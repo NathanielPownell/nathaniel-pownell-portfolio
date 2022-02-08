@@ -1,0 +1,35 @@
+.navbar {
+    position: fixed;
+    background: white;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.432);
+}
+
+.navbar_inner {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.navbar_inner ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.logo img{
+    height: 60px;
+}
+
+.logo span{
+    letter-spacing: 3px;
+    color: blue;
+    text-transform: uppercase;
+    font-weight: light;
+}

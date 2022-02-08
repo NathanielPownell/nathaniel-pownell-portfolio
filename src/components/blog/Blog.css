@@ -1,0 +1,22 @@
+.blog {
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+
+@media screen and (max-width: 850px) {
+    .navbar img{
+        height: 40px
+    }
+
+    .welcomhero{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .welcomheader {
+        z-index: 2;
+        padding-left: 10px;
+    }
+    .coffee{
+        height: 30vh;
+    }
+}

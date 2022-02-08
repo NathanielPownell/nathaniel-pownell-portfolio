@@ -1,0 +1,71 @@
+.blogrecents {
+  
+  background-color: #01a4f2;
+}
+.blogrecents h1 {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.493);
+  margin-top: 0;
+}
+.postholder {
+    padding: 1em;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    grid-auto-columns: 30%;
+    overscroll-behavior-inline: contain;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: var(--_spacer, 1rem);
+    gap: 1em;
+  }
+  
+  .postholder > * {
+    scroll-snap-align: start;
+  }
+  
+  .post {
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.541);
+    text-align: left;
+  }
+  .post_info {
+    color: rgb(0, 0, 0);
+  }
+  .banner {
+    width: 100%;
+    aspect-ratio: 26 / 9;
+    object-fit: cover;
+  
+  }
+  
+  
+  /* width */
+  .postholder::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .postholder::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .postholder::-webkit-scrollbar-thumb {
+      border-radius: 20px;
+    background: linear-gradient(-190deg, rgba(0,87,224,1) 0%, rgb(2, 200, 250) 100%);
+  
+  }
+  
+  /* Handle on hover */
+  .postholder::-webkit-scrollbar-thumb:hover {
+    opacity: .7;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .postholder {
+      grid-auto-columns: 50%;
+    }
+  }
