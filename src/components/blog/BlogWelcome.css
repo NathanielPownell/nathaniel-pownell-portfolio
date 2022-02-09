@@ -1,7 +1,7 @@
 .blogwelcome{
     padding-top: 10vh;
     min-height: 80vh;
-    background: linear-gradient(white, #01a4f2);
+    background: linear-gradient(#00496b, #01a4f2);
     text-align: left;
     display: flex;
     justify-content: center;
