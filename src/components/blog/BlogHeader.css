@@ -23,6 +23,11 @@
     gap: 10px;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
+
 .logo img{
     height: 60px;
 }
