@@ -20,11 +20,11 @@ const About = () => {
                 </div>
                 <div className={classes.right}>
                     <h2>About Me</h2>
-                    <p>I'm a junior full-stack developer.
+                    <p>I'm a front-end developer.
                     </p>
                     <p>
                         I fell in love with the
-                        visual yet technical nature of website development. As a full stack developer, I get to dive deep into the technical backend
+                        visual yet technical nature of website development. I enjoy geting to work with data and create real-world solutions
                         while fulfilling my creative appetite through design and development of the front-facing UI.
                     </p>
                     <p>
