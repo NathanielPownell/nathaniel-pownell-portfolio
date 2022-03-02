@@ -21,18 +21,19 @@ const Home = () => {
             <div id="home" className={classes.upper} >
                 <div className={classes.headline}>
 
-                <animated.h1 style={styles}>Nathaniel <br className={classes.mobile} /> Pownell</animated.h1>
-                <div className={classes.svgContainer}>
-                <img className={classes.nathanSvg} src={NathanSvg} />
-                </div>
+                    <animated.h1 style={styles}>Nathaniel <br className={classes.mobile} /> Pownell</animated.h1>
+                    <div className={classes.svgContainer}>
+                        <img className={classes.nathanSvg} src={NathanSvg} />
+                    </div>
                 </div>
                 <div className={classes.info}>
                     <h3>Front End Developer</h3>
                     <ul className={classes.skillsmobile}>
+                        <li>HTML/CSS</li>
                         <li>Javascript</li>
                         <li>ReactJs</li>
                         <li>UI/Design</li>
-                        <li>HTML/CSS</li>
+
                         <li>Python</li>
                         <li>Django</li>
                         <li>...</li>
@@ -54,12 +55,11 @@ const Home = () => {
             <div className={classes.lower}>
                 <div className={classes.skills}>
                     <ul>
-                    <li>ReactJs</li>
-                    <li>Javascript</li>
-                    <li>Javascript</li>
+                        <li>HTML/CSS</li>
+                        <li>Javascript</li>
                         <li>ReactJs</li>
                         <li>UI/Design</li>
-                        <li>HTML/CSS</li>
+
                         <li>Python</li>
                         <li>Django</li>
                         <li>...</li>
@@ -67,9 +67,9 @@ const Home = () => {
                 </div>
                 <div className={classes.brief}>
                     <p>
-                        Web developer specializing in <b>mobile-first</b> web apps and websites. 
+                        Web developer specializing in <b>mobile-first</b> web apps and websites.
                         Experience designing and developing intuitive <b>User Interfaces </b>
-                         and consuming APIs.
+                        and consuming APIs.
                     </p>
                     &nbsp; <a href="#about" >Learn More</a>
                 </div>
