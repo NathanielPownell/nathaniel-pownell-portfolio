@@ -67,10 +67,11 @@ const Home = () => {
                 </div>
                 <div className={classes.brief}>
                     <p>
-                        Web developer specializing in <b>mobile-first</b> and 
-                        <b> reactive</b> web apps and websites.
+                        Web developer specializing in <b>mobile-first</b> web apps and websites. 
+                        Experience designing and developing intuitive <b>User Interfaces </b>
+                         and consuming APIs.
                     </p>
-                    <a href="#about" >Learn More</a>
+                    &nbsp; <a href="#about" >Learn More</a>
                 </div>
             </div>
         </animated.div>
