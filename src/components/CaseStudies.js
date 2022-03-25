@@ -4,7 +4,7 @@ import { faArrowRight, faCircleNotch, faSpinner } from '@fortawesome/free-solid-
 import AlienImg from '../images/alienfront.jpg'
 import SurveyImg from '../images/survhey_img.jpg'
 import RandomImg from '../images/randomuser_img.jpg'
-import InvstrImg from '../images/invstrmain.jpg'
+import BankImg from '../images/bankio.png'
 import { Link } from 'react-router-dom'
 import EstateioImg from '../images/estatesfront.jpg'
 import { useSpring, animated } from 'react-spring'
@@ -35,16 +35,16 @@ const CaseStudies = () => {
                 <h2>Projects </h2>
             </div>
             <div className={classes.projects}>
+
+                <Card image={BankImg} title="Coming Soon - Bank Dashboard" desc="View balances and recent transactions in this sleek bank dashboard..." techs={['']} toInfoPath="/projects/invstr" toExternalPath="https://invstrapp.herokuapp.com/" displayButtons={false}/>
                 
                 <Card image={SurveyImg} title="Survey Web App" desc="Create and edit a survey and generate a link to send to friends." toInfoPath="/projects/survhey" toExternalPath="https://master.d5e8q7ae5xwkg.amplifyapp.com/Home" techs={['Django/DjangoREST', 'ReactJs']} displayButtons={true} />
                 
                 <Card image={RandomImg} title="Random Person Generator" desc="Django Rest API that returns JSON for a randomly generated person." toInfoPath="/projects/random" toExternalPath="https://main.d3r7x3m8bhtzcp.amplifyapp.com/" techs={['Django/DjangoREST', 'ReactJs']} displayButtons={true} />
                 
                 <Card image={AlienImg} title="Web3 NFT Site" desc="View NFT Collection data from opensea.io." techs={['Reactjs']} toInfoPath="/projects/alienswap" toExternalPath="https://main.d1ygngt526fn5m.amplifyapp.com/" displayButtons={true} />
-                
-                <Card image={InvstrImg} title="Stock Watchlist App" desc="User-based app to add and edit stock watchlist." techs={['Django']} toInfoPath="/projects/invstr" toExternalPath="https://invstrapp.herokuapp.com/" displayButtons={true}/>
-                
-                <Card image={EstateioImg} title="Real Estate App" desc="View and search real estate listings." techs={['Reactjs'], ['Nextjs']} toInfoPath="/projects/estatesio" toExternalPath="https://real-estate-app-five.vercel.app/" displayButtons={true}/>
+                                
+                <Card image={EstateioImg} title="Real Estate App" desc="View and search real estate listings." techs={['Reactjs', 'Nextjs']} toInfoPath="/projects/estatesio" toExternalPath="https://real-estate-app-five.vercel.app/" displayButtons={true}/>
 
             </div>
             <div className={classes.wideSection}>
