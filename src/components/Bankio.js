@@ -1,4 +1,13 @@
 import React from 'react'
+import ProjectModal from './ProjectModal'
+import Badge from './ui/Badge'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+
+import classes from './Alienswap.module.css'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 const Bankio = () => {
   return (
@@ -24,7 +33,7 @@ const Bankio = () => {
             <div className={classes.actionDiv} >
                 {/* <p>Read more on <a target="_blank" href="https://github.com/NathanielPownell/real-estate-app#readme">Github <FontAwesomeIcon icon={faGithub} /></a></p> */}
                 <p className={classes.run}> <a target="_blank" href="https://us-east-1.console.aws.amazon.com/amplify/home?region=us-east-1&code=e86b4dbf2d3e6be38ff5#/drlf9f7ncyp3w"> Run App &nbsp; <FontAwesomeIcon icon={faPlay} /></a></p>
-
+            </div>
         </ProjectModal>
   )
 }
