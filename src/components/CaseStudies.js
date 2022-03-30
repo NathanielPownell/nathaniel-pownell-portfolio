@@ -47,7 +47,7 @@ const CaseStudies = () => {
                                 
                 <Card image={StoicImg} title="Stoic Twitter" desc="Twitter-ish feed full of quotes from famous Stoic philosophers. Infinite scroll." techs={['Reactjs', 'React-Query']} toInfoPath="#projects" toExternalPath="https://main.d1znxmygxjy3vd.amplifyapp.com/" displayButtons={true}/>
                 
-                <Card image={BlogImg} title="Personal Blog" desc="Personal blog created with Django and React. Includes Rich Text editor for creating and editing posts." techs={['Reactjs', 'Django']} toInfoPath="/projects/blog" toExternalPath="https://www.nathanielpownell.com/blog" displayButtons={true}/>
+                {/* <Card image={BlogImg} title="Personal Blog" desc="Personal blog created with Django and React. Includes Rich Text editor for creating and editing posts." techs={['Reactjs', 'Django']} toInfoPath="/projects/blog" toExternalPath="https://www.nathanielpownell.com/blog" displayButtons={true}/> */}
 
                 <Card image={AlienImg} title="Web3 NFT Site" desc="View NFT Collection data from opensea.io." techs={['Reactjs']} toInfoPath="/projects/alienswap" toExternalPath="https://main.d1ygngt526fn5m.amplifyapp.com/" displayButtons={true} />
                 

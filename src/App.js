@@ -32,7 +32,7 @@ function App() {
             <Route exact path='/projects/survhey' element={< Survey />}></Route>
             <Route exact path='/projects/random' element={< Random />}></Route>
             <Route exact path='/projects/bankio' element={< Bankio />}></Route>
-            <Route exact path='/projects/blog' element={< BlogInfo />}></Route>
+            {/* <Route exact path='/projects/blog' element={< BlogInfo />}></Route> */}
             <Route exact path='/blog' element={< Blog />}></Route>
             <Route exact path='./blog/:slug' element={< Blog />}> </Route>
           </Routes>
