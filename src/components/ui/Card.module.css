@@ -43,9 +43,20 @@
 }
 
 .technologiesul{
+    margin-top: 5px;
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+.technologiesul > * {
+    /* border: 1px solid gray; */
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.295);
+    width: fit-content;
+    padding: 4px;
 
+}
 .actionContainer{
     /* transform: translateY(80px); */
     transition: all .3s ease-in-out;

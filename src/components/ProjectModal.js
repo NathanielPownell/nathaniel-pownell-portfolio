@@ -12,9 +12,9 @@ const ProjectModal = (props) => {
                 <FontAwesomeIcon icon={faTimesCircle} />
                 </a>
             </div>
-            <h1>
+            <div className={classes.modalContent}>
                 {props.children}
-            </h1>
+            </div>
         </div>
     )
 }
