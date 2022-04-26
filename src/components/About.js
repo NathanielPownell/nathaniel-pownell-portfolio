@@ -37,7 +37,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className={classes.skills}>
+            {/* <div className={classes.skills}>
                 <ul>
                     <li><Badge image="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" /></li>
                     <li><Badge image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" /></li>
@@ -57,7 +57,7 @@ const About = () => {
                     <li><Badge image="https://mms.businesswire.com/media/20210623005228/en/887051/23/vercel-logotype-dark.jpg" /></li>
 
                 </ul>
-            </div>
+            </div> */}
         </animated.div>
     );
 };

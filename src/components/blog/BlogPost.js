@@ -3,6 +3,7 @@ import axios from 'axios'
 import './BlogPost.css'
 import ReactionBar from './ReactionBar';
 import CommentList from './CommentList';
+import { useParams } from 'react-router-dom';
 
 const BlogPost = (props) => {
     const [dataSet, setDataSet] = useState([])
@@ -10,6 +11,7 @@ const BlogPost = (props) => {
     const [views, setViews] = useState()
     const [clicked, setClicked] = useState(false)
     const [comments, setComments] = useState()
+    const id = useParams().id
     const handleLikeClick = () => {
         setClicked(true)
     }

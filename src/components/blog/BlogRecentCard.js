@@ -1,10 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const BlogRecentCard = (props) => {
-
+    const navigate = useNavigate()
     const handleBlogClick = () => {
         props.setCurrentPost(props.post.id)
         console.log(props.post.id)
+        // navigate(`/blog/${props.post.id}`)
         window.scrollTo(0,0)
       }
 

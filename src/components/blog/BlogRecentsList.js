@@ -2,9 +2,10 @@ import React, { useState, useEffect } from 'react';
 import './BlogRecentsList.css';
 import axios from 'axios'
 import BlogRecentCard from './BlogRecentCard';
-
+import {useNavigate} from 'react-router-dom'
 function BlogRecentsList(props) {
   const [dataSet, setDataSet] = useState([])
+  const navigate = useNavigate()
 
   let data
 
@@ -18,6 +19,7 @@ function BlogRecentsList(props) {
   }, [])
   const handleBlogClick = (blogid) => {
     props.setCurrentPost(blogid)
+    // navigate(`/blog/${blogid}`)
     console.log(blogid)
   }
   return (
