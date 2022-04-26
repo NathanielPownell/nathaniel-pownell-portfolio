@@ -16,7 +16,7 @@ const BlogPost = (props) => {
     let data
 
     const getCommentData = () => {
-        axios.get(`http://localhost:8000/comment/${props.postid}/`).then((res) => {
+        axios.get(`https://nathansblog-api.herokuapp.com/comment/${props.postid}/`).then((res) => {
             data = res.data
             setComments(data.length)
         }
@@ -25,7 +25,7 @@ const BlogPost = (props) => {
     }
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/posts/${props.postid}/`).then((res) => {
+        axios.get(`https://nathansblog-api.herokuapp.com/posts/${props.postid}/`).then((res) => {
             data = res.data
             console.log(data)
             setDataSet(data)
@@ -34,14 +34,14 @@ const BlogPost = (props) => {
         })
         axios({
             method: 'put',
-            url: `http://localhost:8000/addviews/${props.postid}/`, 
+            url: `https://nathansblog-api.herokuapp.com/addviews/${props.postid}/`, 
             data: {
                 id: 1,
                 views: views+1,
             }
         }
         )
-        axios.get(`http://localhost:8000/comment/${props.postid}/`).then((res) => {
+        axios.get(`https://nathansblog-api.herokuapp.com/comment/${props.postid}/`).then((res) => {
             data = res.data
             setComments(data.length)
         }
@@ -50,7 +50,7 @@ const BlogPost = (props) => {
     }, [props.postid])
 
     const getLikes = () => {
-        axios.get(`http://localhost:8000/addlikes/${props.postid}/`).then((res) => {
+        axios.get(`https://nathansblog-api.herokuapp.com/addlikes/${props.postid}/`).then((res) => {
             data = res.data
             console.log(data)
             setLikes(data[0].likes)
@@ -64,7 +64,7 @@ const BlogPost = (props) => {
         
         axios({
             method: 'put',
-            url: `http://localhost:8000/addlikes/${props.postid}/`, 
+            url: `https://nathansblog-api.herokuapp.com/addlikes/${props.postid}/`, 
             data: {
                 id: 1,
                 likes: likes+1,

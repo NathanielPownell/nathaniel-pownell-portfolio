@@ -9,7 +9,7 @@ function BlogRecentsList(props) {
   let data
 
   useEffect(() => {
-    axios.get('http://localhost:8000/posts/').then((res) => {
+    axios.get('https://nathansblog-api.herokuapp.com/posts/').then((res) => {
       data = res.data
       setDataSet(data)
 

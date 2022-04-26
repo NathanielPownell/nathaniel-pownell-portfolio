@@ -9,7 +9,7 @@ const CommentList = (props) => {
     let data
 
     const getData = () => {
-        axios.get(`http://localhost:8000/comment/${props.postid}/`).then((res) => {
+        axios.get(`https://nathansblog-api.herokuapp.com/comment/${props.postid}/`).then((res) => {
             data = res.data
             console.log(data)
             setDataSet(data)
@@ -21,7 +21,7 @@ const CommentList = (props) => {
     
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/comment/${props.postid}/`).then((res) => {
+        axios.get(`https://nathansblog-api.herokuapp.com/comment/${props.postid}/`).then((res) => {
             data = res.data
             console.log(data)
             setDataSet(data)
@@ -31,7 +31,7 @@ const CommentList = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post(`http://localhost:8000/comment/${props.postid}/`, {
+        axios.post(`https://nathansblog-api.herokuapp.com/comment/${props.postid}/`, {
             name: name,
             comment_body: comment,
             post: props.postid,
