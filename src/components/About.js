@@ -28,7 +28,7 @@ const About = () => {
                         while fulfilling my creative appetite through design and development of the front-facing UI.
                     </p>
                     <p>
-                        Along with development, my hobbies include 2D and 3D graphic design and icon illustration.
+                        Along with development, my hobbies include dabbling in Web3 development, 2D and 3D graphic design, and fitness.
                     </p>
                     <div className={classes.actionsContact}>
                         <a href="#contact" >

@@ -24,8 +24,10 @@ h1 {
 }
 
 .paragraph {
+    text-align: left;
     font-weight: normal;
     font-size: 1.2em;
+    margin-bottom: 20px;
     max-width: 500px;
 }
 .actionDiv {

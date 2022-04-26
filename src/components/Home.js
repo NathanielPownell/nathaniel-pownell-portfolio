@@ -27,11 +27,12 @@ const Home = () => {
                     </div>
                 </div>
                 <div className={classes.info}>
-                    <h3>Front End Developer</h3>
+                    <h3>Software Developer</h3>
                     <ul className={classes.skillsmobile}>
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
                         <li>ReactJs</li>
+                        <li>NodeJs</li>
                         <li>UI/Design</li>
 
                         <li>Python</li>
@@ -58,10 +59,12 @@ const Home = () => {
                         <li>HTML/CSS</li>
                         <li>Javascript</li>
                         <li>ReactJs</li>
+                        <li>NodeJs</li>
                         <li>UI/Design</li>
 
                         <li>Python</li>
                         <li>Django</li>
+                        <li>Git</li>
                         <li>...</li>
                     </ul>
                 </div>

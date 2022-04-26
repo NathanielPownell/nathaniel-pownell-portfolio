@@ -40,7 +40,7 @@ const CaseStudies = () => {
 
                 <Card image={BankImg} title="Bank Dashboard" desc="View balances and recent transactions in this sleek bank dashboard." techs={['ReactJs', 'React-Spring', 'Recharts']} toInfoPath="/projects/bankio" toExternalPath="https://master.drlf9f7ncyp3w.amplifyapp.com/" displayButtons={true}/>
                 
-                <Card image={SurveyImg} title="Survey Web App" desc="Create and edit a survey and generate a link to send to friends." toInfoPath="/projects/survhey" toExternalPath="https://master.d5e8q7ae5xwkg.amplifyapp.com/Home" techs={['Django/DjangoREST', 'ReactJs']} displayButtons={true} />
+                <Card image={SurveyImg} title="Survey Web App" desc="MERN CRUD application - Create and edit surveys." toInfoPath="/projects/survhey" toExternalPath="https://survhey-app.herokuapp.com/dashboard" techs={['MERN', 'Redux', 'Cloudinary']} displayButtons={true} />
                 
                 <Card image={RandomImg} title="Random Person Generator" desc="Django Rest API that returns JSON for a randomly generated person." toInfoPath="/projects/random" toExternalPath="https://main.d3r7x3m8bhtzcp.amplifyapp.com/" techs={['Django/DjangoREST', 'ReactJs']} displayButtons={true} />
                 
