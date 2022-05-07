@@ -20,12 +20,17 @@ const About = () => {
                 </div>
                 <div className={classes.right}>
                     <h2>About Me</h2>
-                    <p>I'm a front-end developer.
+                    <p>
+                        I like to build things.
                     </p>
                     <p>
-                        I fell in love with the
-                        visual yet technical nature of website development. I enjoy geting to work with data and create real-world solutions
-                        while fulfilling my creative appetite through design and development of the front-facing UI.
+                        I started getting in to the web side of software development during my time at Ivy Tech. As a Software Development student, 
+                        I learned much about the basics and fundamentals of Computer Science, and when I discovered how to make websites
+                        I fell in love with being able to build anyting I wanted.
+                    </p>
+                    <p>
+                        As you can see in my projects, I'm comfortable with a variety of technologies and architectures. 
+                        It has been a goal to be a flexible developer who can adapt and use the proper tool for the current project.
                     </p>
                     <p>
                         Along with development, my hobbies include dabbling in Web3 development, 2D and 3D graphic design, and fitness.

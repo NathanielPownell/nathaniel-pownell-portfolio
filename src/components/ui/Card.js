@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { useRef, useState } from "react";
 import { useSpring, animated } from "@react-spring/web";
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import Button from './Button'
 import classes from './Card.module.css'
@@ -50,6 +51,13 @@ const Card = (props) => {
                                 <a className={classes.runLink} target="_blank" href={props.toExternalPath}>
                                     Run &nbsp; <FontAwesomeIcon icon={faArrowRight} />
                                 </a>
+                            </Button>
+                        </div>
+                    }
+                    {props.gitHubOnly &&
+                        <div className={classes.actionContainer}>
+                            <Button variety="secondary round" target="_blank" href={props.toInfoPath} className={classes.view}>
+                                View On GitHub &nbsp;<FontAwesomeIcon icon={faGithub} />
                             </Button>
                         </div>
                     }

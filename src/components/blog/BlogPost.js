@@ -38,7 +38,7 @@ const BlogPost = (props) => {
             method: 'put',
             url: `https://nathansblog-api.herokuapp.com/addviews/${props.postid}/`, 
             data: {
-                id: 1,
+                id: props.postid,
                 views: views+1,
             }
         }
