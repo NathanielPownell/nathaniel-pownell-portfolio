@@ -15,21 +15,21 @@ const About = () => {
         <animated.div id="about" style={styles}>
 
             <div className={classes.contactcontent}>
-                <div className={classes.left}>
-                    <img src={nathanpic}></img>
-                </div>
-                <div className={classes.right}>
-                    <h2>About Me</h2>
+                {/* <div>
+                    <img style={{ width: "280px" }} src={nathanpic}></img>
+                </div> */}
+                <div className={classes.paragraphs} >
+                    <h2 style={{ gridColumn: "1 / span 2" }}>About Me</h2>
                     <p>
                         I like to build things.
                     </p>
                     <p>
-                        I started getting in to the web side of software development during my time at Ivy Tech. As a Software Development student, 
+                        I started getting in to the web side of software development during my time at Ivy Tech. As a Software Development student,
                         I learned much about the basics and fundamentals of Computer Science, and when I discovered how to make websites
                         I fell in love with being able to build anyting I wanted.
                     </p>
                     <p>
-                        As you can see in my projects, I'm comfortable with a variety of technologies and architectures. 
+                        As you can see in my projects, I'm comfortable with a variety of technologies and architectures.
                         It has been a goal to be a flexible developer who can adapt and use the proper tool for the current project.
                     </p>
                     <p>
@@ -41,6 +41,30 @@ const About = () => {
                         </a>
                     </div>
                 </div>
+
+            </div>
+            <div className={classes.contactcontent}>
+
+                <div className={classes.paragraphs} >
+                    <h2 style={{ gridColumn: "1 / span 2" }}>My Coding Tenets</h2>
+                    <h3>🚀 Agility</h3>
+                    <p>
+                    I follow a cyclical agile development method. Being familiar with Agile and SCRUM, I work in small, bite-size sprints to test and flush out new features as they're added. This allows me to push an early version of my project sooner and ensuring I don't have a crazy amount of testing to do all at once.
+                    </p>
+                    <h3>💎 Quality of Code</h3>
+                    <p>
+                    My goal is to write high quality and efficient code that not only performs well but is also structured in a way that complies with best practices. My code is unequivocal and explicit, steering away from esoteric conventions. I want to contribute quality to your codebase.
+                    </p>
+                    <h3>🌱 Forward-Thinking</h3>
+                    <p>
+                    I strive to write code that can accommodate future changes and the inclusion of new features. I believe that every line of code should be written with future you in mind. This means not cutting corners.
+                    </p>
+                    
+                </div>
+
+
+
+
             </div>
             {/* <div className={classes.skills}>
                 <ul>

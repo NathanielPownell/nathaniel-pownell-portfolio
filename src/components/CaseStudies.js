@@ -39,16 +39,14 @@ const CaseStudies = () => {
             </div>
             <div className={classes.projects}>
 
-                
-                <Card image={SurveyImg} title="Survey CRUD App" desc="MERN CRUD application - Create and edit surveys." toInfoPath="/projects/survhey" toExternalPath="https://survhey-app.herokuapp.com/dashboard" techs={['MERN', 'Redux', 'Cloudinary']} displayButtons={true} />
-                
+                <Card image={SurveyImg} title="Survey CRUD App" desc="MERN CRUD application - Create and edit surveys." toInfoPath="/projects/survhey" toExternalPath="https://survhey-app.herokuapp.com/dashboard" techs={['MERN', 'Redux', 'Cloudinary']} displayButtons={true} />                
                 <Card image={JobBoardImg} title="Job Posting CRUD App" desc="It's kind of like Indeed." gitHubOnly={true} toInfoPath="https://github.com/NathanielPownell/job-board" toExternalPath="https://main.d3r7x3m8bhtzcp.amplifyapp.com/" techs={['Django', 'Tailwind']} displayButtons={false} />
                 
                 <Card image={RandomImg} title="Random Person Generator" desc="Django Rest API that returns JSON for a randomly generated person." toInfoPath="/projects/random" toExternalPath="https://main.d3r7x3m8bhtzcp.amplifyapp.com/" techs={['Django/DjangoREST', 'ReactJs']} displayButtons={true} />
                                 
-                <Card image={StoicImg} title="Stoic Twitter" desc="Twitter-ish feed full of quotes from famous Stoic philosophers. Infinite scroll." techs={['Reactjs', 'React-Query']} toInfoPath="#projects" toExternalPath="https://main.d1znxmygxjy3vd.amplifyapp.com/" displayButtons={true}/>
+                {/* <Card image={StoicImg} title="Stoic Twitter" desc="Twitter-ish feed full of quotes from famous Stoic philosophers. Infinite scroll." techs={['Reactjs', 'React-Query']} toInfoPath="#projects" toExternalPath="https://main.d1znxmygxjy3vd.amplifyapp.com/" displayButtons={true}/> */}
                 
-                <Card image={BlogImg} title="Personal Blog" desc="Personal blog created with Django and React. Includes Rich Text editor for creating and editing posts." techs={['Reactjs', 'Django']} toInfoPath="https://www.nathanielpownell.com/blog" toExternalPath="https://www.nathanielpownell.com/blog" displayButtons={true}/>
+                {/* <Card image={BlogImg} title="Personal Blog" desc="Personal blog created with Django and React. Includes Rich Text editor for creating and editing posts." techs={['Reactjs', 'Django']} toInfoPath="https://www.nathanielpownell.com/blog" toExternalPath="https://www.nathanielpownell.com/blog" displayButtons={true}/> */}
                 <Card image={BankImg} title="Bank Dashboard" desc="View balances and recent transactions in this sleek bank dashboard." techs={['ReactJs', 'React-Spring', 'Recharts']} toInfoPath="/projects/bankio" toExternalPath="https://master.drlf9f7ncyp3w.amplifyapp.com/" displayButtons={true}/>
 
                 {/* <Card image={AlienImg} title="Web3 NFT Site" desc="View NFT Collection data from opensea.io." techs={['Reactjs']} toInfoPath="/projects/alienswap" toExternalPath="https://main.d1ygngt526fn5m.amplifyapp.com/" displayButtons={true} /> */}
@@ -57,13 +55,13 @@ const CaseStudies = () => {
 
             </div>
             <div className={classes.wideSection}>
-                <div className={classes.wideCard}>
+                {/* <div className={classes.wideCard}>
                     <a href="/projects/portfolio">
                         Check out the breakdown of this portfolio website!
                         &nbsp;
                         <FontAwesomeIcon icon={faArrowRight} />
                     </a>
-                </div>
+                </div> */}
             </div>
         </animated.div>
     );
